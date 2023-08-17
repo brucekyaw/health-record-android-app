@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label_register_patient"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="@string/register_patient"
+        android:gravity="center"
+        android:textColor="@color/black_full"
+        android:textSize="@dimen/text_heading_2x"
+        />
+
+    <EditText
+        android:id="@+id/et_patient_name"
+        android:drawableStart="@drawable/custom_patient_icon"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="@string/enter_patient_name"
+        android:textSize="14sp"
+        android:background="@drawable/custom_input"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/et_room_number"
+        android:drawableStart="@drawable/custom_room_icon"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:drawablePadding="12dp"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/custom_input"
+        android:hint="@string/enter_room_number"
+        android:inputType="number"
+        />
+
+
+    <Button
+        android:textSize="@dimen/text_regular_2x"
+        android:id="@+id/btn_register"
+        android:layout_margin="@dimen/margin_medium_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_gradient_button"
+        android:text="@string/register_patient"/>
+
+</LinearLayout>
+
+</ScrollView>

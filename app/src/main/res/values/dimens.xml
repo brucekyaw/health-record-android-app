@@ -1,0 +1,64 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Generic with ratio -->
+    <dimen name="margin_smallest">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_medium_2">16dp</dimen>
+    <dimen name="margin_medium_3">20dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xxlarge">48dp</dimen>
+
+    <dimen name="margin_card_medium">6dp</dimen>
+    <dimen name="margin_card_medium_2">12dp</dimen>
+
+    <dimen name="margin_small_n">-4dp</dimen>
+    <dimen name="margin_card_medium_n">-6dp</dimen>
+    <dimen name="margin_medium_n">-8dp</dimen>
+    <dimen name="margin_card_medium_2_n">-12dp</dimen>
+    <dimen name="margin_medium_2_n">-16dp</dimen>
+    <dimen name="margin_medium_3_n">-18dp</dimen>
+    <dimen name="margin_large_n">-24dp</dimen>
+    <dimen name="margin_xlarge_n">-32dp</dimen>
+    <dimen name="color_bar_size">2dp</dimen>
+    <dimen name="text_smaller">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_regular">14sp</dimen>
+    <dimen name="text_regular_2x">16sp</dimen>
+    <dimen name="text_regular_3x">20sp</dimen>
+    <dimen name="text_heading_1x">24sp</dimen>
+    <dimen name="text_heading_2x">32sp</dimen>
+    <dimen name="text_big">40sp</dimen>
+    <dimen name="text_big_2x">60sp</dimen>
+    <dimen name="text_big_3x">80sp</dimen>
+    <dimen name="line_spacing">1sp</dimen>
+    <dimen name="list_item_bottom_spacing">4dp</dimen>
+    <dimen name="list_item_right_spacing">8dp</dimen>
+
+    <dimen name="icon_dimen_regular">52dp</dimen>
+    <dimen name="exercises_card_view_margin">40dp</dimen>
+    <dimen name="bg_dialog_button_radius">4dp</dimen>
+    <dimen name="dialog_button_height">35dp</dimen>
+    <dimen name="home_category_margin_top">108dp</dimen>
+
+    <dimen name="detail_image_width">200dp</dimen>
+    <dimen name="card_width">160dp</dimen>
+    <dimen name="card_height">160dp</dimen>
+    <dimen name="app_bar_size">236dp</dimen>
+    <dimen name="healthy_tips_detail_image_height">150dp</dimen>
+    <dimen name="page_counter_width">100dp</dimen>
+    <dimen name="item_card_view_home">120dp</dimen>
+    <dimen name="size_for_main_icon">80dp</dimen>
+    <dimen name="regular_button_width">100dp</dimen>
+    <dimen name="you_tube_video_width">230dp</dimen>
+    <dimen name="show_icon_image_width">128dp</dimen>
+    <dimen name="card_view_home_page_margin_bottom">132dp</dimen>
+    <dimen name="old_man_card_view_size">230dp</dimen>
+    <dimen name="home_page_cards_parent_size">260dp</dimen>
+    <dimen name="old_man_image_size">160dp</dimen>
+    <dimen name="card_width_2">167dp</dimen>
+    <dimen name="body_exercises_item_image_size">150dp</dimen>
+    <dimen name="card_background_height">60dp</dimen>
+</resources>

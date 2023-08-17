@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="@dimen/margin_xlarge">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sv_patient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_full"
+            app:queryHint="Search Here"
+            app:layout_constraintVertical_bias="0.499" />
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_patient_list"
+    android:layout_margin="@dimen/margin_medium"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+</LinearLayout>

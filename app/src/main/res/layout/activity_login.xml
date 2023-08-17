@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_login.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <TextView
+        android:id="@+id/tv_health_record"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fontFamily="monospace"
+        android:text="@string/health_record"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_heading_1x" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4dp"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textSize="@dimen/text_heading_1x"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:textColor="@color/main_color" />
+
+
+            <EditText
+                android:drawableStart="@drawable/custom_account_box_icon"
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/username"
+                android:textSize="14sp"
+                android:background="@drawable/custom_input"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:drawableStart="@drawable/custom_lock_icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:drawablePadding="12dp"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:background="@drawable/custom_input"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_gradient_button"
+                android:text="@string/sign_in" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</ScrollView>

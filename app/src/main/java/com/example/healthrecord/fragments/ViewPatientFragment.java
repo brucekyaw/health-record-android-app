@@ -6,6 +6,7 @@ import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +14,7 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.healthrecord.R;
 import com.example.healthrecord.activities.PatientDetailActivity;
@@ -36,6 +38,7 @@ public class ViewPatientFragment extends Fragment implements PatientActionDelega
     private SearchView svPatientName;
     private List<PatientInfoVO> filteredPatientList = new ArrayList<>();
 
+    private SwipeRefreshLayout srlRefresh;
     private List<PatientInfoVO> originalPatientList = new ArrayList<>();
 
     @Override
@@ -43,6 +46,7 @@ public class ViewPatientFragment extends Fragment implements PatientActionDelega
 
         View view = inflater.inflate(R.layout.fragment_patient_view,container,false);
         svPatientName = view.findViewById(R.id.sv_patient_name);
+        srlRefresh = view.findViewById(R.id.srl_refresh);
         mPatientAdapter = new PatientAdapter(this);
         recyclerView = view.findViewById(R.id.rv_patient_list);
         recyclerView.setAdapter(mPatientAdapter);
@@ -64,6 +68,15 @@ public class ViewPatientFragment extends Fragment implements PatientActionDelega
                 mPatientAdapter.setPatientList(originalPatientList);
                 filteredPatientList = mPatientAdapter.filter(newText);
                 return true;
+            }
+        });
+
+        srlRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                PatientModel.getsObjectInstance().loadPatient();
+                Toast.makeText(getContext(), "Patient List Refreshed", Toast.LENGTH_SHORT).show();
+                srlRefresh.setRefreshing(false);
             }
         });
 

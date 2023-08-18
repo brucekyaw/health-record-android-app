@@ -40,14 +40,6 @@
             android:textColor="@color/material_dynamic_secondary50"
             app:drawableLeftCompat="@drawable/ic_room" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/LightIndicator"-->
-<!--            android:layout_width="16dp"-->
-<!--            android:layout_height="16dp"-->
-<!--            android:layout_marginEnd="@dimen/margin_medium_2"-->
-<!--            android:layout_gravity="center_vertical"-->
-<!--            android:background="@drawable/holo_green_light"-->
-<!--            android:visibility="visible" />-->
 
         <ImageView
             android:id="@+id/iv_arrow"

@@ -25,10 +25,17 @@
 
     </androidx.cardview.widget.CardView>
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rv_patient_list"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/srl_refresh"
     android:layout_margin="@dimen/margin_medium"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_patient_list"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"/>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

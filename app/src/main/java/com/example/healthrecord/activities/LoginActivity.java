@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity{
         etUserName = findViewById(R.id.et_username);
         etPassword = findViewById(R.id.et_password);
         btnSignIn = findViewById(R.id.btn_signin);
-//        nurseList = NurseDataGenerator.generateNurseData();
         btnSignIn.setOnClickListener(view -> checkUser());
 
     }

@@ -1,18 +1,9 @@
 package com.example.healthrecord.adapters;
 
-import android.os.Bundle;
-
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.lifecycle.Lifecycle;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
-
-import com.example.healthrecord.fragments.RegisterPatientFragment;
-import com.example.healthrecord.fragments.ViewPatientFragment;
 
 import java.util.ArrayList;
 import java.util.List;

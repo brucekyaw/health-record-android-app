@@ -29,16 +29,10 @@ public class PatientDetailActivity extends AppCompatActivity {
     private TextView tvMedicalRecordId;
     private TextView tvMedicalRecordDate;
     private TextView tvPatientName;
-
     private TextView lblMedicalRecordDate;
-
     private TextView lblPatientName;
-
     private TextView lblMedicalRecordId;
-
-//    private TextView tvPatientGender;
     private GridView gridPatientDetail;
-//    private TextView tvHeartDiseaseResult;
     private PatientDetailAdapter patientDetailAdapter;
     private ShapeableImageView imgPatient;
     private FrameLayout flNoMedicalRecord;

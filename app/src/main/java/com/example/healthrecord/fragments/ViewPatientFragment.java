@@ -76,6 +76,7 @@ public class ViewPatientFragment extends Fragment implements PatientActionDelega
             public void onRefresh() {
                 PatientModel.getsObjectInstance().loadPatient();
                 Toast.makeText(getContext(), "Patient List Refreshed", Toast.LENGTH_SHORT).show();
+                srlRefresh.setRefreshing(false);
             }
         });
 
